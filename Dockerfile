@@ -25,6 +25,6 @@ RUN git clone https://github.com/lnls-dig/aravisGigE /opt/epics/aravisGigE && \
     echo 'GLIBPREFIX=/usr' >> configure/RELEASE.local && \
     echo 'GLIB_INC1=/usr/lib/x86_64-linux-gnu/glib-2.0/include' >> configure/RELEASE.local && \
     echo 'GLIB_INC2=/usr/lib/x86_64-linux-gnu/glib-2.0/include' >> configure/RELEASE.local && \
-    sed -i '/USR_LIBS += glib-2.0/c\USR_SYS_LIBS += glib-2.0' aravisGigEApp/src/Makefile
+    sed -i '/USR_LIBS += glib-2.0/c\USR_SYS_LIBS += glib-2.0' aravisGigEApp/src/Makefile && \
     ln -s /opt/aravis vendor && \
     make

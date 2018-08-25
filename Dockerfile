@@ -16,7 +16,7 @@ RUN git clone https://github.com/lnls-dig/aravis.git /opt/aravis && \
 
 RUN git clone https://github.com/lnls-dig/aravisGigE /opt/epics/aravisGigE && \
     cd /opt/epics/aravisGigE && \
-    git checkout R2-1-LNLS1 && \
+    git checkout R2-1-LNLS2 && \
     echo 'EPICS_BASE=/opt/epics/base' > configure/RELEASE.local && \
     echo 'SUPPORT=/opt/epics/synApps-lnls-R0-0-2/support' >> configure/RELEASE.local && \
     echo 'AREADETECTOR=$(SUPPORT)/areaDetector-R3-2' >> configure/RELEASE.local && \
